@@ -85,11 +85,7 @@ class PaymentController extends Controller
 
 
 
-    // public function paymentProcess(Request $request, $id)
-    // {
-    //     dd($request->all()); // Menampilkan semua data yang diterima
-    //     // Proses lainnya
-    // }
+
 
 
 
