@@ -1,0 +1,32 @@
+<div class="flex justify-center item-center">
+    <div class="mt-20 mb-10 bg-white p-8 rounded shadow-md w-96">
+        <h1 class="text-2xl font-bold text-center mb-4">Login</h1>
+
+        <form name="registerForm" id="registerFrom" action="{{ route('auth.register') }}" method="POST"
+            enctype="multipart/form-data" onsubmit="return validateForm()" @required(true)>
+
+            @csrf
+
+            <div>
+                <label for="email" class="block text-gray-700">Email</label>
+                <input id="email" type="email" class="w-full border-gray-300 rounded p-2"
+                    placeholder="email@contoh.com">
+            </div>
+
+            <div>
+                <label for="password" class="block text-gray-700">Password</label>
+                <input id="password" type="password" class="w-full border-gray-300 rounded p-2" placeholder="password">
+            </div>
+            <button type="button" id="register-button"
+                class="w-full mt-2 bg-black-500 text-black p-2 rounded hover:bg-blue-600">Login</button>
+
+            <div class="col-12 text-blue">
+                <a href="{{ route('auth.register') }}" class="text-blue"><i class="fa fa-sign-in">
+                    </i> Belum punya akun ? Daftar</a>
+
+            </div>
+        </form>
+    </div>
+
+
+</div>
